@@ -7,6 +7,8 @@ import java.util.Objects;
 
 public class VehicleMemLocalDataSource {
 
+    private static VehicleMemLocalDataSource instance = null;
+
     private ArrayList<Vehicle> storage = new ArrayList<>();
 
     public ArrayList<Vehicle> findAll() {
@@ -17,7 +19,7 @@ public class VehicleMemLocalDataSource {
         storage.add(vehicle);
     }
 
-    public void delete(String vehicleId) {
-        storage.removeIf(vehicle -> Objects.equals(vehicle.getId(), vehicleId));
+    public void delete(String Id) {
+        storage.removeIf(vehicle -> Objects.equals(vehicle.getId(), Id));
     }
 }
