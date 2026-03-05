@@ -1,4 +1,4 @@
-package feature.vehicle;
+package feature.vehicle.data;
 
 import feature.vehicle.domain.Vehicle;
 
