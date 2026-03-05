@@ -1,7 +1,5 @@
 package feature.vehicle.domain;
 
-
-
 public class SaveVehiclesUseCase {
 
     VehicleRepository vehicleRepository;
